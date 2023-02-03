@@ -1,0 +1,15 @@
+import { ProductAdapter } from './ProductAdapter/index.ts';
+const product = {
+    a200: 'produto',
+    c400: 10,
+    f400: 20
+};
+const mapping = {
+    a200: "name",
+    c400: "product",
+    f400: "amount"
+};
+const adapter = new ProductAdapter(product);
+const adaptedProduct = adapter.adapt(mapping);
+console.log(adaptedProduct);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImZpbGU6Ly8vaG9tZS9ydW5uZXIvVHlwZXNjcmlwdEFkYXB0ZXIvbW9kLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IFByb2R1Y3RBZGFwdGVyIH0gZnJvbSAnLi9Qcm9kdWN0QWRhcHRlci9pbmRleC50cydcblxuY29uc3QgcHJvZHVjdCA9IHtcbiAgYTIwMDogJ3Byb2R1dG8nLFxuICBjNDAwOiAxMCxcbiAgZjQwMDogMjBcbn1cblxuY29uc3QgbWFwcGluZyA9IHtcbiAgYTIwMDogXCJuYW1lXCIsXG4gIGM0MDA6IFwicHJvZHVjdFwiLFxuICBmNDAwOiBcImFtb3VudFwiXG59XG5cbmNvbnN0IGFkYXB0ZXIgPSBuZXcgUHJvZHVjdEFkYXB0ZXI8dHlwZW9mIHByb2R1Y3QsIHR5cGVvZiBtYXBwaW5nPihwcm9kdWN0KVxuY29uc3QgYWRhcHRlZFByb2R1Y3QgPSBhZGFwdGVyLmFkYXB0KG1hcHBpbmcpXG5cbmNvbnNvbGUubG9nKGFkYXB0ZWRQcm9kdWN0KTtcbiJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxTQUFTLGNBQWMsUUFBUSw0QkFBMkI7QUFFMUQsTUFBTSxVQUFVO0lBQ2QsTUFBTTtJQUNOLE1BQU07SUFDTixNQUFNO0FBQ1I7QUFFQSxNQUFNLFVBQVU7SUFDZCxNQUFNO0lBQ04sTUFBTTtJQUNOLE1BQU07QUFDUjtBQUVBLE1BQU0sVUFBVSxJQUFJLGVBQStDO0FBQ25FLE1BQU0saUJBQWlCLFFBQVEsS0FBSyxDQUFDO0FBRXJDLFFBQVEsR0FBRyxDQUFDIn0=
